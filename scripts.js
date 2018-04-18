@@ -10,12 +10,29 @@ $(document).ready(function() {
 			alert('Uzupełnij wymagane pola');
 			return false;
 		}
-		
-		
 	});
+	
 	$('#name').tooltip({
 		content: 'Wprowadź imię'
 	});
+	
+	$('input').click(function(){
+		if($(this).val() == '') {
+			$(this).blur(function() {
+				$(this).css({
+					'border': '2px solid red'
+				});
+			});
+		}
+	});
+	
+	$('input').focus(function() {
+		$(this).css({
+			'border': '2px solid #29b6cf',
+			'background': '#fffedd'
+		});
+	});
+	
 	$('#date').datepicker({
 		dayNamesMin: ['Ndz', 'Pon', 'Wt', 'Śr', 'Czw', 'Pt', 'Sob', ],
 		monthNames: ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'],
@@ -28,9 +45,4 @@ $(document).ready(function() {
 	}).css({
 		'color': 'green'
 	});
-	
-	
-	
-	
-	
 });
