@@ -45,16 +45,5 @@ $(document).ready(function() {
 	}).css({
 		'color': 'green'
 	});
-	$('#date').datepicker({
-		dayNamesMin: ['Ndz', 'Pon', 'Wt', 'Śr', 'Czw', 'Pt', 'Sob', ],
-		monthNames: ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'],
-		dateFormat: 'dd-mm-yy',
-		duration: 2000,
-		prevText: 'Poprzedni',
-		nextText: ' Następny',
-		showAnim: 'fold',
-		weekHeader: 'W'
-	}).css({
-		'color': 'green'
-	});
+	
 });
