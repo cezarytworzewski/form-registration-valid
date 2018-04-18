@@ -1,0 +1,12 @@
+body {
+	background-color: white;
+	padding: 0;
+	margin: 0;
+}
+
+.logowanie {
+	font-size: 42px;
+	color: pink;
+	font-weight: bolder;
+	margin: 50px;
+}
